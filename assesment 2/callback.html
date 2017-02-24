@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callbacak</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		(function(){
+			function _read(cb){
+				setTimeout(function(){cb()},1000);	
+			}
+
+			function readFromFile(){
+				console.log("start");
+				_read(function(){
+					console.log("read complete");
+				});
+				console.log("end");
+			}
+			readFromFile();
+
+
+		})();
+	</script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<div class="body">
+	<header>
+		<h2> TO THE NEW</h2>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Quick Help</a>
+		</nav>
+	</header>
+	<section>
+		<div class="formbody">
+			<div class="formhead">
+				<h3>Bug Report</h3>
+			</div>
+			<form>
+				<div class="formcontent">
+					Title:*</br>
+					<input class="text" type="text" name="title"></br>
+					Description:*</br>
+					<input class="text" type="text" name="Description" style="height: 75px"></br>
+					Operating System:</br>
+					<div class="outerdrop">
+						<div class="select">
+							<select class="selectcontrol"></br>
+								<option>Windows XP</option>
+								<option>Ubuntu</option>
+								<option>MAC</option>
+							</select>
+						</div>
+					</div></br>
+					Product:*</br>
+					<div class="outerdrop">
+						<div class="select">
+								<select class="selectcontrol">
+									<option>Formoid</option>
+									<option>product 1</option>
+									<option>product 2</option>
+								</select>
+						</div>
+					</div></br>
+					Version:*</br>
+					<input class="text" type="text" name="version" style="width: 120px"></br>
+					License:</br>
+					<input class="radio" type="radio" name="License">Free
+					<input class="radio" type="radio" name="License" style="margin-left: 90px">Business Severity</br>
+					<div class="outerdrop">
+						<div class="select">
+								<select class="selectcontrol">
+									<option>Critical</option>
+									<option>option 2</option>
+									<option>option 3</option>
+								</select>
+						</div>
+					</div></br>
+					Attachments:</br>
+					<input type="file" name="fileupload" class="fileUpload"></br>
+				</div>
+				<div class="formfoot">
+						<input type="submit" name="Send" class="submit">
+				</div>
+			</form>				
+			
+			
+		</div>
+	</section>
+</div>
+</body>
+</html>

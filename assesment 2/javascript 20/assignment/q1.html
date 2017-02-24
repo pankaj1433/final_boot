@@ -1,0 +1,58 @@
+<!-- Insted using validation , use custom exception to handle all types of valid data
+Craete a Registration form which have following fileds
+1. First Name (Only characters[a-z, A-Z] are allowed)
+2. Last Name (Only characters[a-z, A-Z] are allowed)
+3. Contact Number (Only digits [0-9], length should be 10)
+4. DOB (A valid date)
+All fields are mendetory, If user click on submit button and any field is wrong then should through an error as per type -->
+
+<html>
+<head>
+<title>q1</title>
+</head>
+<body>
+	<div>
+		<form>
+			First Name:
+			<input type="text" id="fname" placeholder="First Name..">
+			Last Name:
+			<input type="text" id="lname" placeholder="Last Name..">
+			Contact Number:
+			<input type="text" id="contact" placeholder="Contact Number..">
+			Date Of Birth:
+			<input type="text" id="dob" placeholder="Date Of Birth">
+			<input type="button" id="Submit" onclick="clk()" value="Submit">
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function clk(){
+	var fname=document.getElementById('fname').value;
+	var lname=document.getElementById('lname').value;
+	var contact=document.getElementById('contact').value;
+	var dob=document.getElementById('dob').value;
+
+	var regname = new RegExp('[a-zA-Z]');
+	var regcontact = new RegExp('[0-9]{10}');
+	var dobRE=/^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d+$/;
+
+	try{
+		if (fname==""||lname==""||contact==""||dob=="") 
+			throw "all fileds are required";
+		if(!(regname.test(fname)))
+			throw "not a valid first name use only characters";
+		if(!(regname.test(lname)))
+			throw "not a valid last name use only characters";
+		if(!(regcontact.test(contact)))
+			throw "not a valid phone number";
+		if(!(dobRE.test(dob)))
+			throw "not a valid date";
+	}
+	catch(excp)
+	{
+		alert(excp);
+	}
+
+	};
+</script>
+</html>

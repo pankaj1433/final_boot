@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="div1">Retrive the data from server using ajax get call</div>
+               <h1>Run in local server</h1>
+
+        <button type="button">Click Me to get Data</button>
+        <p></p>    
+    </body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+    $(document).ready(function(){
+        console.log("hello");
+        $("button").click(function() {
+        //data path
+            $.ajax({url: "sample.txt",type:'GET',success:function(result) {
+                setTimeout(function(){
+                    $("p").html(result);
+                },1000);
+            },error:function(){
+                
+            }});
+        });
+    });
+    
+</script>
+</html>

@@ -1,0 +1,21 @@
+
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ </head>
+  <body>
+  <div>
+  		<div id="mydiv">
+          <p id="load_delay">i am div tag and page is loading</p>
+
+      </div>
+  </div>
+  </body>
+  <script type="text/javascript">
+setTimeout((function() {
+    //$('#load_delay').delay(100);
+    $("#mydiv").html("<p>text after page load</p>");
+}),1000);
+
+  </script>
+</html>

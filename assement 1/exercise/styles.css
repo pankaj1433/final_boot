@@ -1,0 +1,69 @@
+body{
+	background: rgb(56, 56, 56);
+}
+.head {
+	color: white;
+	margin-left: 15px;
+}
+.header{
+	padding-top: 1px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+.body{
+	margin-left: 60px;
+	margin-right: 60px;
+	background: #292929;
+	
+	padding-bottom: 20px;
+}
+nav a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+.navi{
+	background: #211e1e;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+}
+.content{
+	top:10px;
+	background-color: white;
+	position: relative;
+
+}
+.content1{
+	background: rgb(56, 56, 56);
+	padding:100px;
+	position: relative;
+	top:30px;
+}
+.content2{
+	background: #BCB1AF  ;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.content3{
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.mydiv{
+	display: inline-block;
+	width: 24.5%;
+
+}
+.mydiv div{
+	background: rgb(56, 56, 56);
+	padding: 120px 80px;
+}
+.foot{
+	margin-right: 60px;
+	margin-left: 60px;
+}
+.foot p{
+	padding-top: 10px;
+}

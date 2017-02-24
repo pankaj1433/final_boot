@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+       
+     
+		$(document).ready(function(){
+			
+		
+ 		$('.main-menu').hover(function(){
+ 	
+  			$(this).find('.sub-menu').slideDown();
+
+   						});
+
+ 		$('.main-menu').mouseleave(function(){
+ 	
+  			$(this).find('.sub-menu').slideUp();
+
+   						});
+
+  	});
+  	</script>
+<head>
+</head>
+<body>
+<h3>Retrive the data from server using ajax get call</h3>
+<ul>
+<li class="main-menu">
+  my menu
+  <ul class="sub-menu" style="display: none;">
+    <li><a href="#">one</a></li>
+    <li><a href="#">two</a></li>
+    <li><a href="#">three</a></li>
+    <li><a href="#">four</a></li>
+    <li><a href="#">five</a></li>
+  </ul>
+</li>
+</ul>
+
+</body>
+</html>

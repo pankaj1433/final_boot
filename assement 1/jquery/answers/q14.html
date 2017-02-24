@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<style type="text/css">
+	.box{
+ 		border:solid black 2px;
+ 		margin-bottom: 20px;
+ 		padding: 10px; 	
+ 	}
+</style>
+<script type="text/javascript">
+       
+     
+		$(document).ready(function(){
+			var highest = null;
+			var hi = 0;
+			$(".box").each(function(){
+			  var h = $(this).height();
+			  if(h > hi){
+			     hi = h;
+			     highest = $(this);  
+
+			  }    
+			});
+
+			$("h3").text("div with maximum height have height:"+hi);
+			highest.css("border","solid red 3px");
+  	});
+  	</script>
+<head>
+</head>
+<body>
+<h2>Get the max height of elements using jquery each method</h2>
+<div>
+    <div class="box">
+      Line 1
+      Line 2
+    </div>
+    <div class="box">
+      Line 1<br/>
+      Line 2<br/>
+      Line 3<br/>
+      Line 4<br/>
+    </div>
+    <div class="box">
+      Line 1
+    </div>
+    <div class="box">
+      Line 1
+      Line 2
+    </div>
+</div>
+<h3></h3>
+</body>
+</html>

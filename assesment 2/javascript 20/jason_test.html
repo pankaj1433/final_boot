@@ -1,0 +1,23 @@
+$(document).ready(function(){
+        console.log("hello");
+        $("button").click(function() {
+
+                    $.ajax({ 
+                        type: 'GET', 
+                        url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452', 
+                         
+                        dataType: 'json',
+                        success: function (data) { 
+                            $.each(data, function(index,element){
+                                $('body').append(" "+data.results[0].address_components[0].long_name);
+                            })
+                                
+                        }
+                    });
+
+        });
+
+
+
+
+    });

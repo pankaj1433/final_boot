@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	(function(){
+		function foo(a){
+			function bar(){
+				console.log(a);
+				return a++;
+			}
+			return bar();
+		}
+
+		var p=foo(5);
+		console.log(p);
+	})();
+</script>
+
+</body>
+</html>

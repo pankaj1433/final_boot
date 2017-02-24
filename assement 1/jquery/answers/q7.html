@@ -1,0 +1,30 @@
+
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ </head>
+  <body>
+  <div>
+  		<div id="mydiv">
+          <p>Bind a click function to an "click" element and append next "click" next to it.</p>
+
+      </div>
+  </div>
+  </body>
+  <script type="text/javascript">
+
+$(function() {
+    var btn= $("<input>");
+    btn.attr({"value":"Click","type":"button"});
+    $('body').append(btn);
+    
+    btn.click(function(){
+      var btn1= $("<input>");
+      btn1.attr({"value":"Click","type":"button"});
+      $('body').append(btn1);
+    });
+
+});
+
+  </script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div></div>
+        <p>Get data from google api using ajax hit and render the resultent data in table or list form</p>
+        <button type="button">Click Me to get Data</button>
+        <p></p>    
+    </body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script>
+    $(document).ready(function(){
+        console.log("hello");
+        $("button").click(function() {
+
+                    $.ajax({ 
+                        type: 'GET', 
+                        url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452',
+                        dataType: 'json',
+                        success: function (data) { 
+                            $('body').append('<ul>');
+                                    function traverse_it(obj){
+                                            for(var prop in obj){
+                                                if(typeof obj[prop]=='object'){
+                                                    traverse_it(obj[prop]);
+                                                }else{
+                                                    $('body').append('<li>'+prop+' :'+obj[prop]+'</li>');
+                                                }
+                                            }
+                                        }$('body').append('</ul>');
+                                        traverse_it(data);                                
+                        }
+                    });
+
+        });
+
+
+
+
+    });
+    
+
+
+
+   /* var table = $("<table/>").addClass('C');
+            $.each(data, function(rowIndex, r) {
+               var row = $("<tr/>");
+       $.each(r, function(colIndex, c) { 
+           row.append($("<t"+(rowIndex == 0 ?  "h" : "d")+"/>").text(c));
+       });
+       table.append(row);*/
+</script>
+</html>

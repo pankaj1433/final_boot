@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q2.Create a counter using closure</title>
+	<script type="text/javascript">
+		
+function Counter() {
+    var ctr = 0;
+    var say = function() { alert(" counter val " + ctr++); }
+  
+    return say;
+}
+
+
+var counterval=Counter();
+
+counterval();
+counterval();
+counterval();
+
+
+</script>
+</head>
+<body>
+<p>Create a counter using closure</p>
+</body>
+</html>

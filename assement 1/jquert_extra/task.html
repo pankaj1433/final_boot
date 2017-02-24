@@ -1,0 +1,67 @@
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ 
+
+ <script type="text/javascript">
+ $(document).ready(function(){
+ 				var i=0;
+                var outer_box = $("<div>");
+                outer_box.attr("id", "outer");
+                outer_box.css({"border":"2px solid grey","margin":"20px 300px 0 300px","padding":"5px"});
+ 				
+				$('body').html(outer_box);
+
+				var textbox1= $("<input>");
+				textbox1.attr("type","text");
+				textbox1.attr({"id":"one","placeholder":"Name.."});
+				textbox1.css({"margin":"5px"});	
+				outer_box.html(textbox1);
+
+				var textbox2= $("<input>");
+				textbox2.attr("type","text");
+				textbox2.attr({"id":"two","placeholder":"Email.."});
+				textbox2.css({"margin":"5px"});	
+				outer_box.append(textbox2);
+
+				var btn=$("<input>");
+				btn.attr({"type":"button","id":"btn","value":"Add"});
+				btn.css({"margin":"5px"});
+				outer_box.append(btn);
+
+				//outer_box.append("hello");
+				var result_box = $("<div>");
+				result_box.css({"margin":"20px 0 0 300px"});
+
+                
+				$('body').append(result_box);
+
+	$('#btn').click(function(){
+		var result_div= $("<div>");
+		result_box.append(result_div);
+		result_div.css({"border":"2px solid grey","padding":"5px","width":"305px","display":"inline-block","margin":"10px 10px"});
+		var para=$("<p>");
+		para.html(textbox1.val());
+		para.append("<br>");
+		para.append(textbox2.val());
+		result_div.append(para);
+		para.append("<br>");
+
+		var remove_btn=$('<input>');
+		remove_btn.attr({"type":"button","id":"btn"+i,"value":"Remove","class":"remove"});
+		remove_btn.css({"margin":"5px"});
+		result_div.append(remove_btn);
+		i++;
+
+
+$(staticAncestors).on(eventName, dynamicChild, function() {});
+		
+		}); 
+
+ });
+
+ </script>
+ </head>
+  <body>
+  </body>
+</html>

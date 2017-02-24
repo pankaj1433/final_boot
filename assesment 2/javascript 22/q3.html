@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stop watch</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<body>
+<input type="button" id="start" value="START/STOP">
+<!-- <input type="button" id="stop" value="STOP"> -->
+<input type="button" id="pause" value="PAUSE">
+<input type="button" id="resume" value="RESUME">
+<input type="button" id="lap" value="LAP">
+<p id="message">0</p>
+</body>
+<script type="text/javascript">
+$(function(){
+
+////start
+var clickcount=0;
+$('#start').on("click",function(){
+	//console.log(clickcount);
+	if(clickcount==0)
+	{
+		var myVar=setInterval(myTimer, 1000);
+		clickcount=1;
+		count=0;
+		function myTimer() {
+		  count++;
+		  document.getElementById("message").innerHTML = count;
+		}
+	}
+	else
+	{
+		clickcount=0;
+		clearTimeout(myVar);
+	}
+});
+
+
+///////////
+});
+</script>
+
+
+
+</html>

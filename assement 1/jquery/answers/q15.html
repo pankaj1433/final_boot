@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<style type="text/css">
+	td,th{
+ 		border:solid black 2px;
+ 		margin-bottom: 20px;
+ 		padding: 30px; 	
+ 	}
+ 	th{
+ 		font-size: 30px;
+ 	}
+</style>
+<script type="text/javascript">
+       
+     
+		$(document).ready(function(){
+			var highest = null;
+			var hi = 0;
+			$("td").each(function(){
+			  var h = $(this).text();
+			   if(h > 10){
+			     $(this).css("background","#f1afaf"); 
+
+			  }  
+			});
+			
+  	});
+  	</script>
+<head>
+</head>
+<body>
+<h2>Change color of every cell which has number larger than 10.</h2>
+<table border="1">
+  <tr>
+    <th>col 1</th>
+    <th>col 2</th> 
+    <th>col 3</th>
+    <th>col 4</th>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>2</td> 
+    <td>16</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>24</td> 
+    <td>1</td>
+    <td>17</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>5</td> 
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>20</td> 
+    <td>11</td>
+    <td>17</td>
+  </tr>
+</table>
+<h3></h3>
+</body>
+</html>

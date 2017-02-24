@@ -1,0 +1,27 @@
+<html>
+ <head>
+ <style type="text/css">
+ 	.first_new{
+ 		background: blue;
+ 	}
+ 	.second_new{
+ 		background: blue;
+ 	}
+ </style>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ <script type="text/javascript">
+ $(document).ready(function(){
+ 	$('[class$="new"]').css('color','red');
+ });
+ </script>
+ </head>
+  <body>
+  <div class="first_new">
+  	<h1>color of text changes by using jquery</h1>
+  </div>
+  <div class="second_new">
+  	<h1>some text</h1>
+  </div>
+  <p class="third_new">this is paragraph</p>
+  </body>
+</html>

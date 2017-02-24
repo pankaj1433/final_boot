@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<title></title>
+    <meta charset="utf-8">
+    <title>question1</title>
+      <script>
+      	
+      	
+      	
+      	try
+      	{
+      		var pa=parseInt(window.prompt("Enter Amount"));
+      		if(isNaN(pa)) throw "not a number";
+      		if(!(pa>100 && pa<10000)) throw "p a out of range";	
+      		
+      		var t=parseInt(window.prompt("Enter Years"));
+      		
+      		if (!(t>=1 && t<=5)) throw "time out of range";
+
+      		var r=parseInt(window.prompt("Enter Interest Rate"));
+      		if (!(r>=4 && r<=12)) throw "rate out of range";
+      	
+      		var Interest=(pa*r*t)/100;
+      		window.alert("Interest Amount is:"+Interest);  
+      	}    	
+      	catch(err){
+      		alert(err);
+      	}
+      </script>
+  </head>
+  <body>
+      <h4>Simple Intrest</h4>    
+  </body>
+</html>	

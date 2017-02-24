@@ -1,0 +1,34 @@
+
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ </head>
+  <body>
+  <div>
+  		<div id="mydiv">
+          <p>Click event not working on element which added dynamicly or via script, make it work using .on method.</p>
+          <h2></h2>
+      </div>
+  </div>
+  </body>
+  <script type="text/javascript">
+function clk(){
+      var btn1= $("<input>");
+      btn1.attr({"value":"Click","type":"button","class":"test"});
+      $('body').append(btn1);
+    };
+
+$(function() {
+   var btn= $("<input>");
+    btn.attr({"value":"Click","type":"button"});
+    $('body').append(btn);
+   
+    btn.on("click",function(){clk();});
+
+    $("body").on("click",".test", function(){clk();});
+
+
+});
+
+  </script>
+</html>

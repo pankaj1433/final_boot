@@ -1,0 +1,32 @@
+
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ <style>
+ 	#mydiv{
+ 		margin:30px;
+ 	}
+ </style>
+ </head>
+  <body>
+  <div>
+  		
+          <p>Get dropdown selected value on onchanage event and append in div container</p>
+          <select id="sel">
+          	<option text="one">one</option>
+          	<option>two</option>
+          </select>
+      <div id="mydiv">some</div>
+
+  </div>
+  </body>
+  <script type="text/javascript">
+$(function() {
+	 $("#sel").change(function () {
+        $("#mydiv").append(this.value);
+    });
+	 
+});
+
+  </script>
+</html>

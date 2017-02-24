@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ques6</title>
+</head>
+
+
+
+<body >
+  <script >
+  	
+  	function startTime()
+{
+	var myVar = setInterval(myTimer, 1000);
+	var count=0;
+	function myTimer() {
+	  count++;
+	  if(count<7200)//7200 for two hours
+	  {
+	  var d = new Date();
+	  document.getElementById("message").innerHTML = d.toLocaleTimeString();
+	  }
+	 else {
+	   clearTimeout(myVar);
+	   alert("Your service has completed");
+	 }
+
+	}
+}
+
+startTime();
+  </script>
+<p>Start a digital watch for 2 hours on your screen and after that print a successfull message on screen that our service has been completed</p>
+<p id="message"></p>
+
+</body>
+</html>

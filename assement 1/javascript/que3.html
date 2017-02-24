@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Question 3</title>
+<script>  
+
+    function myFunction(){  
+        var radius=parseFloat(document.getElementById('radius').value);
+        var area=3.14*radius*radius;
+        //alert(area);
+        document.getElementById("area").innerHTML=area;
+    }  
+    </script>  
+</head> 
+<body>
+
+      <h1> To Check Palindrome</h1>
+      <form>
+          Enter the Radius of the circle : <input type="text" id="radius"/><br>
+          Area of the circle is :<strong><span id="area"></span></strong><br>
+          <input type="submit" name="Check" value="Check" onclick="myFunction();return false;">
+      </form>
+</body>
+</html>

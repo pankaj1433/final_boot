@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q6.Start a digital watch for 2 hours on your screen and after that print a successfull message on screen that our service has been completed
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function fn(callbackfn){
+
+	setInterval(function(){
+
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+
+        var e=currentTime-hours;
+        // Add leading zeros
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+        hours = (hours < 10 ? "0" : "") + hours;
+
+        // Compose the string for display
+        var currentTimeString = hours + ":" + minutes + ":" + seconds;
+        $(".clock").html(currentTimeString);
+
+        if(e==2)
+        callbackfn();
+
+			},1000 )
+
+
+}
+
+fn(function(){
+	alert(" Our service has been completed ");
+
+	});
+
+</script>
+</head>
+<body>
+
+<div class="clock"></div>
+</body>
+</html>

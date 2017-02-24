@@ -1,0 +1,41 @@
+
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ <style type="text/css">
+  #mydiv{
+    border:solid black 2px;
+    margin-right: 600px;
+    margin-bottom: 20px;
+    padding: 10px;  
+  }
+ </style>
+ </head>
+  <body>
+  <div>
+    <h3>We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li.</h3>
+  		<div id="mydiv">
+          
+            <li>i am li ,click me to stop click event</li>
+          
+          <p>i am in div</p>
+      </div>
+  </div>
+  </body>
+  <script type="text/javascript">
+
+
+$(function() {
+  $("#mydiv").on("click",function(){
+      alert("Hello");
+  });
+  $("#mydiv").children("li").bind("click",function(){
+     // alert("i am li");
+      $(this).parent().off();
+      $(this).text("now div click is off");
+  });
+ 
+});
+
+  </script>
+</html>

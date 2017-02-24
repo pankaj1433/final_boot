@@ -1,0 +1,23 @@
+<html>
+ <head>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+ 
+
+ <script type="text/javascript">
+ $(document).ready(function(){
+ 	
+                var link = $("<a>");
+                link.attr("href", "http://www.google.com");
+                link.attr("title", "Google.com");
+                link.text("Google");
+                link.addClass("link");
+ 
+                $(".box").html(link);
+ });
+
+ </script>
+ </head>
+  <body>
+  <div class="box"></div>
+  </body>
+</html>

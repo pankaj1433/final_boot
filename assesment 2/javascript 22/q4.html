@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+function playPause() { 
+
+var myVideo = document.getElementById("video1"); 
+//alert(myVideo);
+
+   if (myVideo.paused) 
+       myVideo.play(); 
+   else 
+       myVideo.pause(); 
+} 
+
+
+
+</script>
+
+<video id="video1" width="320" height="240" controls>
+ <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> 
+
+</video>
+
+<div style="text-align:center"> 
+ <button onclick="playPause()">Play/Pause</button> </div>
+
+ <br><br>
+
+
+</body>
+</html>

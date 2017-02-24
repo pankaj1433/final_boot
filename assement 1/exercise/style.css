@@ -1,0 +1,73 @@
+.one{
+	color: blue;
+}
+.divc{
+	border: 1px solid #222;
+	padding: 2%;
+	background: white;
+}
+.divc p{
+	color: blue;
+	margin-left: 500px;
+}
+.divone{
+	background: blue;
+	padding: 10px;
+}
+.divtwo{
+	background: green;
+	padding: 10px;
+}
+.first{
+	border: 3px solid #222;
+	padding: 2%;
+	width: 20%;
+	display: inline-block;
+	
+}
+.second{
+	border: 3px solid #222;
+	padding: 2%;
+	width: 250px;	
+	display: inline-block;
+	border-radius: 75%;
+	height: 250px;
+	float: right;
+	background: url("s.png");
+}
+.second div{
+	margin-left: 50px;
+	overflow: hidden;
+}
+a:hover{
+	color: red;
+}
+.x{
+	border: 2px solid #222;
+	padding:20px;
+	width: 30%;
+	position: relative;
+	;
+	display: inline-block;
+	background: rgb(240,230,140);
+}
+.y{
+	border: 2px solid #222;
+	padding:20px;
+	width: 30%;
+	position: relative;
+	display: inline-block;
+	background: rgb(255,215,0);
+}
+.box{
+	weidth: 100px;
+	height: 
+	background-color: red;
+	-webkit- animation-name: example;
+	-webkit- animation-duration: 4s;
+	animation-name: example;
+	animation-duration: 4s;
+	transition: all 2s;
+	-webkit-transition:all 2s ease-in;
+}
+

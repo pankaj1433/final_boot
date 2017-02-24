@@ -1,0 +1,107 @@
+.body{
+	margin-right: 60px;
+	margin-left: 60px;
+}
+h2{
+	color: #1abc9c;
+	float:left;
+}
+nav{
+	float: right;
+	margin-top: 25px;
+}
+nav a{
+	text-decoration: none;
+	color: #1abc9c;
+	padding-right: 10px;
+}
+.formbody{
+	margin-top: 20px;
+	margin-right: 35%;
+	margin-left: 35%;
+	border: solid 2px #bcc3ca;
+	border-radius: 2px;
+	clear: both;
+}
+.formhead{
+	background: #bcc3ca;
+	color: white;
+	margin-top: 0px;
+}
+.formhead h3{
+	margin-top: 0;
+	padding: 7px
+}
+.formcontent{
+	margin-left: 12px;
+	margin-right: 12px;
+	font-size: 16px;
+	font-family:"new century schoolbook", Georgia, Serif;
+	color:#7a8188;
+}
+.formcontent input,select{
+	margin-bottom: 15px;
+	margin-top: 2px;
+}
+.outerdrop{
+	font-size: 13px;
+	padding: 8px 8px 1px 14px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	position: relative;
+	background: #1abc9c;
+}
+.outerdrop .select{
+	width: 120%;
+}
+.outerdrop .select .selectcontrol{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 120%;
+  color: white;
+}
+.outerdrop .select{
+  width: 80%;
+  background-position:80% center;
+}
+.text {
+    border: 1px solid #bcc3ca; 
+    border-radius: 9px; 
+    outline:0; 
+    height:25px; 
+    width: 310px;  
+  } 
+  .radio{
+  	margin-right: 10px;
+  }
+.formfoot{
+	padding: 10px 20px 10px 270px;
+	background: #bcc3ca;
+}
+.submit{
+	border: 1px solid #1abc9c; 
+    border-radius: 9px;
+    background: #1abc9c; 
+    color: white;
+    height: 32px;
+}
+
+
+
+input[type="file"]{
+   -webkit-appearance: none;
+   text-align: left;
+   -webkit-rtl-ordering:  left;
+}
+input[type="file"]::-webkit-file-upload-button{
+   -webkit-appearance: none;
+   float: right;
+   margin: 0 0 0 10px;
+   border: 1px solid #aaaaaa;
+   border-radius: 4px;
+   background-image: -webkit-gradient(linear, left bottom, left top, from(#d2d0d0), to(#f0f0f0));
+   background-image: -moz-linear-gradient(90deg, #d2d0d0 0%, #f0f0f0 100%);
+}
